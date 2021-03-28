@@ -42,7 +42,7 @@ class ESIM(nn.Module):
         # self.premise_inference = nn.LSTM(input_size=2 * self.hidden_size, hidden_size=self.hidden_size, bias=True, batch_first=True)
         # lf.hypothesis_inference = nn.LSTM(input_size=2 * self.hidden_size, hidden_size=self.hidden_size, bias=True, batch_first=True)
         
-        self.representation_projection_layer = nn.Linear(in_features=self.hidden_size * 4,out_features=self.hidden_size, bias=True)
+        self.representation_projection_layer = nn.Linear(in_features=self.hidden_size * 4, out_features=self.hidden_size, bias=True)
         
         # TODO(dhoota): Implement the bidirectional version.
         self.premise_LSTM = nn.LSTM(input_size=self.hidden_size, hidden_size=self.hidden_size, bias=True, batch_first=True, dropout=dropout_rate)
@@ -173,9 +173,9 @@ class ESIM(nn.Module):
         
         # Feed the representations through a projection layer to get back to self.hidden_size dimensionality.
         # (batch, n, k)
-        full_premise_representation = self.relu(self.representation_projection_layer(full_premise_representation))
+        full_premise_representation = self.dropout(self.relu(self.representation_projection_layer(full_premise_representation)))
         # (batch, m, k)
-        full_hypothesis_representation = self.relu(self.representation_projection_layer(full_hypothesis_representation))
+        full_hypothesis_representation = self.dropout(self.relu(self.representation_projection_layer(full_hypothesis_representation)))
         
         # Pack the sequences before passing through LSTM. This is necessary so that the last hidden state used is the correct one.
         full_premise_representation = torch.nn.utils.rnn.pack_padded_sequence(full_premise_representation, lengths=premise_lengths, batch_first=True, enforce_sorted=False)
@@ -256,11 +256,12 @@ def train():
     # Create the loss function
     cross_entropy_loss = nn.CrossEntropyLoss()
     
-    for epoch in range(1):
+    for epoch in range(100):
         model.train()
         running_loss = 0.0
         y_pred = []
         y_true = []
+        
         for i, data in enumerate(train_data_loader, 1):
             # print("Training")
             # get the inputs; data is a list of [inputs, labels]
@@ -293,11 +294,16 @@ def train():
             running_loss += loss.item()
             
             
-            if i % 1000 == 0:    # print every 1000 mini-batches
+            if i % 2000 == 0:    # print every 1000 mini-batches
                 print('[%d, %5d] loss: %.3f' %
-                      (epoch + 1, i, running_loss / 1000))
+                      (epoch + 1, i, running_loss / 2000))
                 print(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
                 running_loss = 0.0
+                
+        print("Saving model")
+        path = "esim/epoch_{}.pt".format(epoch)
+        torch.save(model.state_dict(), path)
+        print("Model saved")
                 
         print("Running classification report on dev set")
         y_pred = []
@@ -313,9 +319,12 @@ def train():
                 y_pred += np.argmax(outputs_list, axis=1).tolist()
                 y_true += labels.tolist()
                 
-                
-                
+            
             print(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
+            file = open("esim_report.txt", "a")  # append mode
+            file.write(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
+            file.write("\n")
+            file.close()
           
                 
     print("Finished Training!")

@@ -143,16 +143,16 @@ def train():
     train_dataset = SNLITrainDataset()
     dev_dataset = SNLIDevDataset()
     
-    train_data_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn)
+    train_data_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, collate_fn=collate_fn)
     dev_data_loader = DataLoader(dev_dataset, batch_size=64, collate_fn=collate_fn)
     
     # Create the optimizer
-    opt = optim.SGD(model.parameters(), lr=.001, momentum=0.9)
+    opt = optim.Adam(model.parameters(), lr=.0004)
     
     # Create the loss function
     cross_entropy_loss = nn.CrossEntropyLoss()
     
-    for epoch in range(30):
+    for epoch in range(100):
         model.train()
         running_loss = 0.0
         y_pred = []
@@ -189,11 +189,16 @@ def train():
             running_loss += loss.item()
             
             
-            if i % 4000 == 0:    # print every 2000 mini-batches
+            if i % 2000 == 0:    # print every 2000 mini-batches
                 print('[%d, %5d] loss: %.3f' %
-                      (epoch + 1, i, running_loss / 4000))
+                      (epoch + 1, i, running_loss / 2000))
                 print(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
                 running_loss = 0.0
+                
+        print("Saving model")
+        path = "baseline/epoch_{}.pt".format(epoch)
+        torch.save(model.state_dict(), path)
+        print("Model saved")
                 
         print("Running classification report on dev set")
         y_pred = []
@@ -209,6 +214,10 @@ def train():
                 y_true += labels.tolist()
                 
             print(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
+            file = open("baseline_report.txt", "a")  # append mode
+            file.write(classification_report(y_true, y_pred, target_names=['neutral', 'contradiction', 'entailment']))
+            file.write("\n")
+            file.close()
           
                 
     print("Finished Training!")
