@@ -1,0 +1,360 @@
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.62      0.64      3235
+contradiction       0.70      0.58      0.63      3278
+   entailment       0.61      0.76      0.68      3329
+
+     accuracy                           0.65      9842
+    macro avg       0.66      0.65      0.65      9842
+ weighted avg       0.66      0.65      0.65      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.68      0.67      0.68      3235
+contradiction       0.73      0.64      0.69      3278
+   entailment       0.66      0.75      0.70      3329
+
+     accuracy                           0.69      9842
+    macro avg       0.69      0.69      0.69      9842
+ weighted avg       0.69      0.69      0.69      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.65      0.68      3235
+contradiction       0.82      0.59      0.69      3278
+   entailment       0.63      0.85      0.72      3329
+
+     accuracy                           0.70      9842
+    macro avg       0.72      0.70      0.70      9842
+ weighted avg       0.72      0.70      0.70      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.72      0.64      0.68      3235
+contradiction       0.71      0.72      0.71      3278
+   entailment       0.70      0.76      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.68      0.71      0.70      3235
+contradiction       0.75      0.68      0.72      3278
+   entailment       0.71      0.74      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.66      0.69      3235
+contradiction       0.77      0.67      0.72      3278
+   entailment       0.68      0.81      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.71      9842
+ weighted avg       0.72      0.72      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.75      0.64      0.69      3235
+contradiction       0.75      0.69      0.72      3278
+   entailment       0.67      0.82      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.68      0.73      0.70      3235
+contradiction       0.77      0.68      0.72      3278
+   entailment       0.73      0.75      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.72      0.70      3235
+contradiction       0.78      0.67      0.72      3278
+   entailment       0.71      0.77      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.73      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.69      0.70      3235
+contradiction       0.76      0.69      0.73      3278
+   entailment       0.70      0.79      0.75      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.73      0.72      0.72      9842
+ weighted avg       0.73      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.73      0.70      3235
+contradiction       0.79      0.67      0.73      3278
+   entailment       0.72      0.76      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.73      0.72      0.72      9842
+ weighted avg       0.73      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.69      0.70      3235
+contradiction       0.73      0.72      0.73      3278
+   entailment       0.72      0.76      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.69      0.70      3235
+contradiction       0.75      0.70      0.73      3278
+   entailment       0.71      0.76      0.73      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.68      0.69      3235
+contradiction       0.71      0.73      0.72      3278
+   entailment       0.72      0.74      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.73      0.67      0.70      3235
+contradiction       0.73      0.72      0.72      3278
+   entailment       0.71      0.78      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.73      0.70      3235
+contradiction       0.77      0.68      0.72      3278
+   entailment       0.72      0.75      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.68      0.69      3235
+contradiction       0.74      0.70      0.72      3278
+   entailment       0.71      0.77      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.71      0.70      3235
+contradiction       0.76      0.69      0.73      3278
+   entailment       0.72      0.76      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.69      0.69      3235
+contradiction       0.75      0.70      0.73      3278
+   entailment       0.71      0.76      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.71      0.67      0.69      3235
+contradiction       0.71      0.73      0.72      3278
+   entailment       0.72      0.73      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.68      0.70      0.69      3235
+contradiction       0.78      0.67      0.72      3278
+   entailment       0.70      0.78      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.72      0.69      3235
+contradiction       0.75      0.70      0.73      3278
+   entailment       0.73      0.72      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.72      0.69      3235
+contradiction       0.76      0.67      0.71      3278
+   entailment       0.72      0.75      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.66      0.68      3235
+contradiction       0.74      0.71      0.72      3278
+   entailment       0.70      0.78      0.74      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.72      0.70      3235
+contradiction       0.76      0.70      0.73      3278
+   entailment       0.72      0.75      0.73      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.70      0.70      3235
+contradiction       0.76      0.70      0.73      3278
+   entailment       0.72      0.77      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.69      0.69      3235
+contradiction       0.75      0.70      0.72      3278
+   entailment       0.71      0.77      0.74      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.68      0.71      0.70      3235
+contradiction       0.77      0.68      0.72      3278
+   entailment       0.71      0.76      0.73      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.72      0.72      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.71      0.69      3235
+contradiction       0.75      0.70      0.72      3278
+   entailment       0.72      0.73      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.68      0.69      3235
+contradiction       0.75      0.70      0.72      3278
+   entailment       0.70      0.77      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.69      0.69      3235
+contradiction       0.75      0.70      0.72      3278
+   entailment       0.71      0.75      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.70      0.68      0.69      3235
+contradiction       0.73      0.71      0.72      3278
+   entailment       0.71      0.74      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.67      0.71      0.69      3235
+contradiction       0.74      0.69      0.72      3278
+   entailment       0.72      0.73      0.72      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.69      0.69      3235
+contradiction       0.76      0.69      0.72      3278
+   entailment       0.70      0.76      0.73      3329
+
+     accuracy                           0.72      9842
+    macro avg       0.72      0.71      0.71      9842
+ weighted avg       0.72      0.72      0.72      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.67      0.68      3235
+contradiction       0.75      0.70      0.72      3278
+   entailment       0.70      0.77      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
+               precision    recall  f1-score   support
+
+      neutral       0.69      0.66      0.68      3235
+contradiction       0.72      0.72      0.72      3278
+   entailment       0.71      0.74      0.73      3329
+
+     accuracy                           0.71      9842
+    macro avg       0.71      0.71      0.71      9842
+ weighted avg       0.71      0.71      0.71      9842
+
